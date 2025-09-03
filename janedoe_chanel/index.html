@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Janedoe chanel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+SA:wght@100..400&family=Secular+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/ress.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="top">
+        <header>
+            <h1><a href="#top">Jane Doe</a></h1>
+            <input type="checkbox" id="burger-start">
+            <label for="burger-start">
+                <div class="burger_box">
+                        <span class="burger-line"></span>
+                        <span class="burger-none"></span>
+                        <span class="burger-line"></span>
+                </div>
+            </label>
+            <div id="nav_burger">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">自己紹介</a></li>
+                        <li><a href="#game">プレイタイトル</a></li>
+                        <li><a href="#info">配信情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="slide_box">
+            <div class="fullscreen-slideshow">
+                <div class="slide active" style="background-image: url(img/main.jpg);"></div>
+                <div class="slide" style="background-image: url(img/main_2.png);"></div>
+                <div class="slide" style="background-image: url(img/main_3.png);"></div>
+                <button class="nav-button prev" onclick="changeSlide(-1)">❮</button>
+                <button class="nav-button next" onclick="changeSlide(1)">❯</button>
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <section id="intro">
+                <h2>自己紹介<span>Introduction</span></h2>
+                <div class="intro_box">
+                    <div class="intro_item inactive">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    <div class="intro_item inactive">
+                        <div class="text">
+                            <div class="outline">
+                                <h3>概要</h3>
+                                <p>Jane Doeです。YouTubeやTwitchなどを中心に<time datetime="2022-07-21">2022年7月21日</time>からから活動しています。</p>
+                            </div>
+                            <div class="activity">
+                                <h3>主な活動内容</h3>
+                                <ul>
+                                    <li>ゲーム実況(twitch)</li>
+                                    <li>歌ってみた(YouTube)</li>
+                                    <li>雑談配信(Twitch・YouTube)</li>
+                                    <li class="etc">etc...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="game">
+                <h2>プレイタイトル<span>Play title</span></h2>
+                <div class="game_box">
+                    <div class="game_item inactive action">
+                        <div class="visual">
+                            <a href="#" target="_blank">
+                                <img src="img/action.png" alt="">
+                                <div class="mask">
+                                    <div class="caption">
+                                        &rArr;公式サイトへ
+                                        <span>（外部サイトにアクセスします）</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="game_title">Action Game</h3>
+                    </div>
+                    <div class="game_item inactive rpg">
+                        <div class="visual">
+                            <a href="#" target="_blank">
+                                <img src="img/rpg.png" alt="">
+                                <div class="mask">
+                                    <div class="caption">
+                                        &rArr;公式サイトへ
+                                        <span>（外部サイトにアクセスします）</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="game_title">RPG</h3>
+                    </div>
+                    <div class="game_item inactive fantasy">
+                        <div class="visual">
+                            <a href="#" target="_blank">
+                                <img src="img/darkfantasy.png" alt="">
+                                <div class="mask">
+                                    <div class="caption">
+                                        &rArr;公式サイトへ
+                                        <span>（外部サイトにアクセスします）</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="game_title">DarkFantasy</h3>
+                    </div>
+                </div>
+                <a href="#" id="game_button">And more</a>
+            </section>
+            <section id="info">
+                <h2>活動情報<span>information</span></h2>
+                <div class="sns_box">
+                    <div class="sns_item">
+                        <h3>切り抜きはこちら!<span>(YouTube)</span></h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KFpYXZrBuSQ?si=TH1tH4qX1cgsZByC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="sns_item">
+                        <h3>生配信はこちら!<span>(Twitch)</span></h3>
+                        <iframe src="https://player.twitch.tv/?channel=haitani0904&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <a href="#top" id="page_top">Top</a>
+        <footer>
+            <small>&copy;2025 Jane Doe Channel</small>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
