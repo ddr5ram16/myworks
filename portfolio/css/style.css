@@ -142,7 +142,6 @@ section h2{
     flex-wrap: wrap;
     background-color: #A7A7FF;
     box-shadow: #6f6faf 10px 10px 0px;
-    animation: about_in 1s both;
 }
 .about_item dt{
     width: 20%;
