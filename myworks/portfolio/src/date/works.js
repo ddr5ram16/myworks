@@ -1,0 +1,1 @@
+export const WORKS = ['dooglen','portfolio','anonim.html','cafe_anomaly.html','janedoe_channel.html']
