@@ -1,18 +1,73 @@
 import React from 'react'
 import {useState} from 'react'
-import { WORKS } from './date/works.js';
-function webWorks(){
-    web.map((works , i) => 
-        <div className="work_item" key = {i}>
-        <a href="portfolio.html">
-            <img src="img/portforio_about.png" alt=""></img>
-        </a>
-        <h3><span className="work_title">{works}</span></h3>
-    </div>
-    )
-}
+import dooglen from '../img/dooglen_about.png';
+import portfolio from '../img/portforio_about.png';
+import anonim from '../img/anonim_about.png';
+import cafe_anomaly from '../img/cafeanomaly_about.png';
+import janedoe_channel from '../img/janedoe_about.png';
+import novelty from '../img/novelty_about.png'
+import fes from '../img/fes_about.png';
+import beautysalon from '../img/beautysalon_about.png';
+import jobhunting from '../img/jobhunting_about.png';
+import strawberry from '../img/strawberry_about.png';
+
 export default function Works(){
-    const [web , setWeb] = useState(WORKS)
+    const webWORKS = [
+        {
+            name: 'Dooglen',
+            img: dooglen,
+            link: "dooglen.html"
+        },
+        {
+            name: 'Portfolio',
+            img: portfolio,
+            link: "portfolio.html"
+        },
+        {
+            name: 'Anonim',
+            img: anonim,
+            link: "anonim.html"
+        },
+        {
+            name: 'Cafe Anomaly',
+            img: cafe_anomaly,
+            link: "cafe_anomaly.html"
+        },
+        {
+            name: 'Janedoe Channel',
+            img: janedoe_channel,
+            link: "janedoe_channel.html",
+        },
+    ]
+    const otherWORKS = [
+        {
+            name: '企業ノベルティ',
+            img: novelty,
+            link: "novelty.html"
+        },
+        {
+            name: '阿弥陀祭りチラシ',
+            img: fes,
+            link: "fes.html"
+        },
+        {
+            name: '美容室チラシ',
+            img: beautysalon,
+            link: "beautysalon.html"
+        },
+        {
+            name: '就活フェアチラシ',
+            img: jobhunting,
+            link: "Jobhunting.html"
+        },
+        {
+            name: 'いちご狩りチラシ',
+            img: strawberry,
+            link: "strawberry.html"
+        },
+    ]
+    const [web , setWeb] = useState(webWORKS)
+    const [otehr , setOtehr] = useState(otherWORKS)
     return(
         <section id="works">
             <h2>Works</h2>
@@ -24,80 +79,28 @@ export default function Works(){
                     <input type="radio" name="works" id="web_works" defaultChecked></input>
                     <input type="radio" name="works" id="other_works"></input>
                     <div className="web_works">
-                        {/* {
+                        {
                             web.map((works , i) => 
-                            <div className="work_item" key = {i}>
-                                <a href="portfolio.html">
-                                    <img src="img/portforio_about.png" alt=""></img>
+                                <div className="work_item" key = {i}>
+                                <a href={works.link}>
+                                    <img src={works.img} alt=""></img>
                                 </a>
-                                <h3><span className="work_title">{works}</span></h3>
+                                <h3><span className="work_title">{works.name}</span></h3>
                             </div>
                             )
-                        } */}
-                        <div className="work_item">
-                            <a href="dooglen.html">
-                                <img src="img/dooglen_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">Dooglen</span></h3>
-                            <p></p>
-                        </div>
-                        <div className="work_item">
-                            <a href="portfolio.html">
-                                <img src="img/portforio_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">portfolio</span></h3>
-                            <p></p>
-                        </div>
-                        <div className="work_item">
-                            <a href="anonim.html">
-                                <img src="img/anonim_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">Anonim</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="cafe_anomaly.html">
-                                <img src="img/cafeanomaly_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">Cafe Anomaly</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="janedoe_channel.html">
-                                <img src="img/janedoe_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">Janedoe chanel</span></h3>
-                        </div>
+                        }
                     </div>
                     <div className="other_works">
-                        <div className="work_item">
-                            <a href="../novelty.html">
-                                <img src="img/novelty_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">企業ノベルティ</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="fes.html">
-                                <img src="img/fes_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">阿弥陀祭りチラシ</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="beautysalon.html">
-                                <img src="img/beautysalon_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">美容室チラシ</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="Jobhunting.html">
-                                <img src="img/jobhunting_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">就活フェアチラシ</span></h3>
-                        </div>
-                        <div className="work_item">
-                            <a href="strawberry.html">
-                                <img src="img/strawberry_about.png" alt=""></img>
-                            </a>
-                            <h3><span className="work_title">いちご狩りチラシ</span></h3>
-                        </div>
+                        {
+                            otehr.map((works , i) => 
+                                <div className="work_item" key = {i}>
+                                <a href={works.link}>
+                                    <img src={works.img} alt=""></img>
+                                </a>
+                                <h3><span className="work_title">{works.name}</span></h3>
+                            </div>
+                            )
+                        }
                     </div>
                 </div>
             </section>
