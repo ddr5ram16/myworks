@@ -20,11 +20,11 @@ export default function Works(){
                     {
                         web.map((works , i) => 
                             <div className="work_item" key = {i}>
-                            <a href={works.link}>
-                                <img src={works.img} alt=""></img>
-                            </a>
-                            <h3><span className="work_title">{works.name}</span></h3>
-                        </div>
+                                <a href={works.link}>
+                                    <img src={works.img} alt=""></img>
+                                </a>
+                                <h3><span className="work_title">{works.name}</span></h3>
+                            </div>
                         )
                     }
                 </div>
@@ -32,11 +32,11 @@ export default function Works(){
                     {
                         otehr.map((works , i) => 
                             <div className="work_item" key = {i}>
-                            <a href={works.link}>
-                                <img src={works.img} alt=""></img>
-                            </a>
-                            <h3><span className="work_title">{works.name}</span></h3>
-                        </div>
+                                <a href={works.link}>
+                                    <img src={works.img} alt=""></img>
+                                </a>
+                                <h3><span className="work_title">{works.name}</span></h3>
+                            </div>
                         )
                     }
                 </div>
