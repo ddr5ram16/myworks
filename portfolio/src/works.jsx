@@ -1,7 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import {webWorks} from './date/works.jsx'
-import {otherWorks} from './date/works.jsx'
+import {webWorks , otherWorks} from './date/works.jsx'
 
 export default function Works(){
     const [web , setWeb] = useState(webWorks)
