@@ -11,7 +11,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="about"></div>
+        <header class="work_header">
+            <h1 class=""><a href="index.html">Hashizumi'sPortfolio</a></h1>
+            <input type="checkbox" id="burger_button">
+            <label for="burger_button">
+                <div class="burger_box">
+                    <span class="burger_line"></span>
+                    <span class="burger_line none"></span>
+                    <span class="burger_line"></span>
+                </div>
+            </label>
+            <div id="nav_burger">
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#self_promotion">Self-Promotion</a></li>
+                        <li><a href="index.html#works">Works</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="mailto:77.620.hk@au.com">Mail<span class="about_align mail">77.620.hk@au.com</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="wrap">
+            <div id="about"></div>
+        </div>
+        <footer><small><p>&copy;2025 Hashizumi</p></small></footer>
         <script type="module" src="src/about.jsx"></script>
     </body>
 </html>

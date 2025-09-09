@@ -16,28 +16,24 @@ export default function Works(){
                 <input type="radio" name="works" id="web_works" defaultChecked></input>
                 <input type="radio" name="works" id="other_works"></input>
                 <div className="web_works">
-                    {
-                        web.map((works , i) => 
-                            <div className="work_item" key = {i}>
-                                <a href={works.link}>
-                                    <img src={works.img} alt=""></img>
-                                </a>
-                                <h3><span className="work_title">{works.name}</span></h3>
-                            </div>
-                        )
-                    }
+                    {web.map((works , i) => 
+                        <div className="work_item" key = {i}>
+                            <a href={works.link}>
+                                <img src={works.img} alt=""></img>
+                            </a>
+                            <h3><span className="work_title">{works.name}</span></h3>
+                        </div>
+                    )}
                 </div>
                 <div className="other_works">
-                    {
-                        otehr.map((works , i) => 
-                            <div className="work_item" key = {i}>
-                                <a href={works.link}>
-                                    <img src={works.img} alt=""></img>
-                                </a>
-                                <h3><span className="work_title">{works.name}</span></h3>
-                            </div>
-                        )
-                    }
+                    {otehr.map((works , i) => 
+                        <div className="work_item" key = {i}>
+                            <a href={works.link}>
+                                <img src={works.img} alt=""></img>
+                            </a>
+                        <h3><span className="work_title">{works.name}</span></h3>
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
