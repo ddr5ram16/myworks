@@ -9,7 +9,7 @@ import beautysalon from '../../img/beautysalon_about.png';
 import jobhunting from '../../img/jobhunting_about.png';
 import strawberry from '../../img/strawberry_about.png';
 
-export const POOL = {
+export const Profile = {
     profile: {
         name : '橋住健太', 
         hobby: 'TCG、プラモデル、ゲーム(SLG,RPG)',

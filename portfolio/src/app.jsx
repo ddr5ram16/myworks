@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { POOL } from './date/status.jsx';
+import { Profile } from './date/status.jsx';
 import React from "react";
 
 export default function App(){
-    const [date , setDate] = useState(POOL)
+    const [date , setDate] = useState(Profile)
     return(
         <div id="box">
             <section id="about">
