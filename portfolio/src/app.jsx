@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { POOL } from './date/status.js';
+import { POOL } from './date/status.jsx';
 import React from "react";
 
 export default function App(){
