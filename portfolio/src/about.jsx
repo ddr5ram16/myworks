@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import About from './promotion.jsx'
+import Introduction from './introduction.jsx'
 
 ReactDOM.createRoot(document.getElementById('about')).render(
     <React.StrictMode>
-        <About />
+        <Introduction />
     </React.StrictMode>
 );

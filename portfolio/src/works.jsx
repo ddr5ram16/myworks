@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
 import { webWorks , otherWorks } from './date/status.jsx';
-import Item from './item.jsx'
+import Item from './item.jsx';
 
 export default function Works(){
     const [web , setWeb] = useState(webWorks)
@@ -24,7 +24,6 @@ export default function Works(){
                             <h3><span className="work_title">{works.name}</span></h3>
                         </div>
                     )}
-                    
                 </div>
                 <div className="other_works">
                     {otehr.map((works , i) => 
@@ -32,7 +31,7 @@ export default function Works(){
                             <a href={works.link}>
                                 <img src={works.img} alt=""></img>
                             </a>
-                        <h3><span className="work_title">{works.name}</span></h3>
+                            <h3><span className="work_title">{works.name}</span></h3>
                         </div>
                     )}
                 </div>
