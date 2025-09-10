@@ -1,6 +1,6 @@
-import React from 'react';
-import {useState} from 'react';
-import {webWorks , otherWorks} from './date/status.jsx';
+import React , {useState} from 'react';
+import { webWorks , otherWorks } from './date/status.jsx';
+import Item from './item.jsx'
 
 export default function Works(){
     const [web , setWeb] = useState(webWorks)
@@ -24,6 +24,7 @@ export default function Works(){
                             <h3><span className="work_title">{works.name}</span></h3>
                         </div>
                     )}
+                    
                 </div>
                 <div className="other_works">
                     {otehr.map((works , i) => 

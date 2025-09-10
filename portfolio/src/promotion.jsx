@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function About(){
+    
     return(
         <section id="cafe_anomaly" className="work_section">
                 <div className="work_detail_box">
@@ -20,20 +21,18 @@ export default function About(){
                     <div className="work_detail_item">
                         <div className="text">
                             <dl>
-                                <dt>作品名</dt><dd>CafeAnomaly</dd>
-                                <dt>作品概要</dt><dd>20代後半〜40代前半男性向けの架空のカフェのサイトを制作しました。</dd>
-                                <dt>制作箇所</dt><dd>デザイン・コーディング</dd>
+                                <dt>作品名</dt><dd></dd>
+                                <dt>作品概要</dt><dd></dd>
+                                <dt>制作箇所</dt><dd></dd>
                                 <dt>制作期間</dt>
                                 <dd>
-                                    <span className="work_align">デザイン 4日</span>
-                                    <span className="work_align">コーディング 2日</span>
+                                    <span className="work_align"></span>
                                 </dd>
                                 <dt>素材について</dt>
                                 <dd>主にAdobe fire flyを使用して生成、およびフリー素材を使用</dd>
                                 <dt>使用ソフト</dt>
                                 <dd>
-                                    <span className="work_align">デザイン XD,Photoshop</span>
-                                    <span className="work_align">コーディング VScode</span>
+                                    <span className="work_align"></span>
                                 </dd>
                                 <dt>サイトカラー</dt>
                                 <dd>

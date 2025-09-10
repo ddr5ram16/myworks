@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Profile } from './date/status.jsx';
-import React from "react";
+import React, { useState } from 'react';
+import { Profile , webWorks , otherWorks} from './date/status.jsx';
+import Works from './works.jsx'
 
 export default function App(){
     const [date , setDate] = useState(Profile)
@@ -35,6 +35,8 @@ export default function App(){
                     <p>{date.profile.promotion}</p>
                 </div>
             </section>
+            <Works/>
         </div>
+        
     );
 }
