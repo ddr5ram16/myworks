@@ -29,7 +29,7 @@ export default function Introduction(){
                             <dt>サイトカラー</dt>
                             <dd>
                                 <div className="site_color frame">
-                                    <span className={"site_color cafe bg_color"}>背景色</span>
+                                    <span className={"site_color cafe bg_color"}><div>背景色</div></span>
                                     <span className="site_color cafe main_color">メインカラー</span>
                                     <span className="site_color cafe font_color">文字色</span>
                                 </div>

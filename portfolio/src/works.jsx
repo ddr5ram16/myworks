@@ -1,10 +1,14 @@
 import React , {useState} from 'react';
 import { webWorks , otherWorks } from './date/status.jsx';
+import { useNavigate } from "react-router-dom"
 import Item from './item.jsx';
 
 export default function Works(){
     const [web , setWeb] = useState(webWorks)
     const [otehr , setOtehr] = useState(otherWorks)
+    function link(){
+
+    }
     return(
         <section id="works">
             <h2>Works</h2>
@@ -24,6 +28,11 @@ export default function Works(){
                             <h3><span className="work_title">{works.name}</span></h3>
                         </div>
                     )}
+                    <div className="work_item">
+                            <a href="about.html" onClick={link}>aaaaaa
+                            </a>
+                            <h3><span className="work_title"></span></h3>
+                        </div>
                 </div>
                 <div className="other_works">
                     {otehr.map((works , i) => 
