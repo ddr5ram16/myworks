@@ -33,6 +33,7 @@ export default function Works(){
                             </a>
                             <h3><span className="work_title"></span></h3>
                         </div>
+                    <Item props={{web}}/>
                 </div>
                 <div className="other_works">
                     {otehr.map((works , i) => 
