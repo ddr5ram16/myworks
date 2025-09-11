@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useState , Component} from 'react';
 import { webWorks , otherWorks } from './date/status.jsx';
 import { useNavigate } from "react-router-dom"
 import Item from './item.jsx';
@@ -6,9 +6,6 @@ import Item from './item.jsx';
 export default function Works(){
     const [web , setWeb] = useState(webWorks)
     const [otehr , setOtehr] = useState(otherWorks)
-    function link(){
-
-    }
     return(
         <section id="works">
             <h2>Works</h2>
@@ -20,30 +17,10 @@ export default function Works(){
                 <input type="radio" name="works" id="web_works" defaultChecked></input>
                 <input type="radio" name="works" id="other_works"></input>
                 <div className="web_works">
-                    {web.map((works , i) => 
-                        <div className="work_item" key = {i}>
-                            <a href={works.link}>
-                                <img src={works.img} alt=""></img>
-                            </a>
-                            <h3><span className="work_title">{works.name}</span></h3>
-                        </div>
-                    )}
-                    <div className="work_item">
-                            <a href="about.html" onClick={link}>aaaaaa
-                            </a>
-                            <h3><span className="work_title"></span></h3>
-                        </div>
-                    <Item props={{web}}/>
+                    <Item item={web}/>
                 </div>
                 <div className="other_works">
-                    {otehr.map((works , i) => 
-                        <div className="work_item" key = {i}>
-                            <a href={works.link}>
-                                <img src={works.img} alt=""></img>
-                            </a>
-                            <h3><span className="work_title">{works.name}</span></h3>
-                        </div>
-                    )}
+                    <Item item={otehr}/>
                 </div>
             </div>
         </section>

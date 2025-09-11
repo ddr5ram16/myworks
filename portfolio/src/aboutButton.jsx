@@ -1,7 +1,8 @@
 import React , {useState} from "react";
 
-export default function AboutButton(){
+export default function AboutButton({link}){
+    const links =link
     return(
-        <a href="" className="button" target="_blank">サイトへ<span>(別ブラウザで表示します)</span></a>
+        <a href={links} className="button" target="_blank">サイトへ<span>(別ブラウザで表示します)</span></a>
     )
 }

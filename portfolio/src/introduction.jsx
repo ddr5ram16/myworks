@@ -18,12 +18,14 @@ export default function Introduction(){
                             <dt>制作箇所</dt><dd>{}</dd>
                             <dt>制作期間</dt>
                             <dd>
-                                <span className="work_align">{coffee}</span>
+                                <span className="work_align">{}</span>
+                                <span className="work_align">{}</span>
                             </dd>
                             <dt>素材について</dt>
                             <dd>主にAdobe fire flyを使用して生成、およびフリー素材を使用</dd>
                             <dt>使用ソフト</dt>
                             <dd>
+                                <span className="work_align">{}</span>
                                 <span className="work_align">{}</span>
                             </dd>
                             <dt>サイトカラー</dt>

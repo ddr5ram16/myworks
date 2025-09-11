@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Profile , webWorks , otherWorks} from './date/status.jsx';
+import { Profile } from './date/status.jsx';
 import Works from './works.jsx'
 
 export default function App(){

@@ -1,6 +1,8 @@
 import React , {useState} from "react";
 
-export default function AboutImage(){
+export default function AboutImage({image , link}){
+    const img = image;
+    const links = link;
     return(
         <div className="visual">
             <a href="" target="_blank">

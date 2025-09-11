@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import { webWorks , otherWorks } from './date/status.jsx';
 
 export default function Item({item}){
-    const [items , setItems] = useState(item)
+    const items = item;
     return(
         items.map((works , i) => 
             <div className="work_item" key = {i}>
