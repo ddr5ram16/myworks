@@ -23,7 +23,7 @@ export const webWorks = [
     {
         name: 'Dooglen',
         img: dooglen,
-        link: "dooglen.hmtl"
+        link: "dooglen.html"
     },
     {
         name: 'Portfolio',

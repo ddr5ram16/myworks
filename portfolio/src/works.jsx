@@ -1,6 +1,5 @@
 import React , {useState , Component} from 'react';
 import { webWorks , otherWorks } from './date/status.jsx';
-import { useNavigate } from "react-router-dom"
 import Item from './item.jsx';
 
 export default function Works(){

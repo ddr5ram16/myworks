@@ -1,5 +1,4 @@
 import React , {useState} from 'react';
-import { webWorks , otherWorks } from './date/status.jsx';
 
 export default function Item({item}){
     const items = item;
