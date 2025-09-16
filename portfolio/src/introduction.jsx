@@ -2,19 +2,19 @@ import React , {useState} from "react";
 import AboutButton from './aboutButton.jsx'
 import AboutImage from "./aboutImage.jsx";
 
-export default function Introduction(){
-    const coffee = "cafe";
+export default function Introduction({work}){
+    const about = work;
     return(
         <section id="cafe_anomaly" className="work_section">
             <div className="work_detail_box">
                 <div className="work_detail_item">
-                    <AboutImage/>
+                    <AboutImage />
                 </div>
                 <div className="work_detail_item">
                     <div className="text">
                         <dl>
-                            <dt>作品名</dt><dd>{}</dd>
-                            <dt>作品概要</dt><dd>{}</dd>
+                            <dt>作品名</dt><dd>{about.name}</dd>
+                            <dt>作品概要</dt><dd>{about.about}</dd>
                             <dt>制作箇所</dt><dd>{}</dd>
                             <dt>制作期間</dt>
                             <dd>
@@ -31,7 +31,7 @@ export default function Introduction(){
                             <dt>サイトカラー</dt>
                             <dd>
                                 <div className="site_color frame">
-                                    <span className={"site_color cafe bg_color"}><div>背景色</div></span>
+                                    <span className={'site_color bg_color'+''+`${about.color}`}>背景色</span>
                                     <span className="site_color cafe main_color">メインカラー</span>
                                     <span className="site_color cafe font_color">文字色</span>
                                 </div>
@@ -41,7 +41,7 @@ export default function Introduction(){
                                 <p>タブレットとスマートフォンへのレスポンシブ対応を行いつつ、flexを用いての配置整理やliのホバー時などにこだわりました。</p>
                             </dd>
                         </dl>
-                        <AboutButton/>
+                        <AboutButton link={about.link}/>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
-import React , {useState} from 'react';
+import React from 'react';
 
 export default function Item({item}){
-    const items = item;
+    const work = item;
     return(
-        items.map((works , i) => 
+        work.map((works , i) => 
             <div className="work_item" key = {i}>
                 <a href={works.link}>
                     <img src={works.img} alt=""></img>

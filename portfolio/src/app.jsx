@@ -18,7 +18,8 @@ export default function App(){
                             <dd>
                                 {date.tools.map((tools , i)=> <span className='about_align' key = {i} >{tools}</span>)}
                             </dd>
-                            <dt>技能</dt><dd>
+                            <dt>技能</dt>
+                            <dd>
                                 {date.skills.map((skill , i) => <span className='about_align' key = {i} >{skill}</span>)}
                             </dd>
                             <dt>資格</dt>
@@ -35,8 +36,7 @@ export default function App(){
                     <p>{date.profile.promotion}</p>
                 </div>
             </section>
-            <Works/>
+            <Works />
         </div>
-        
     );
 }
