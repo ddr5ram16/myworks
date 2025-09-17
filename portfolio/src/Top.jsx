@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Profile } from './date/status.jsx';
 import Works from './works.jsx'
-import { Router } from 'react-router';
 import Contact from './contact.jsx';
 
-export default function App(){
+export default function Top(){
     const [date , setDate] = useState(Profile)
     return(
         <div id="box">

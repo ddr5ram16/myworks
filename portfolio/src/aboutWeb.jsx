@@ -41,8 +41,8 @@ export default function Introduction({work}){
                                 <p>タブレットとスマートフォンへのレスポンシブ対応を行いつつ、flexを用いての配置整理やliのホバー時などにこだわりました。</p>
                             </dd>
                         </dl>
-                        <AboutButton link={about.link}/>
-                    </div>
+                        <a href={link} className="button" target="_blank">サイトへ<span>(別ブラウザで表示します)</span></a>
+                    </div>s
                 </div>
             </div>
         </section>

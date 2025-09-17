@@ -1,11 +1,12 @@
 import React from "react";
+import {Form} from "react-router-dom";
 
 export default function Contact(){
     return(
         <section id="contact">
             <h2>Contact</h2>
             <div className="form_box">
-                <form action="https://script.google.com/macros/s/AKfycbx-yfWSulvisd127mKAoG0tPElw3JQMKZiFdw4i7UGaw0rID9TDHKJZBaR4C2QXvTHfKw/exec" method="get">
+                <Form action="https://script.google.com/a/macros/multi-school.com/s/AKfycbyEo2xvr807EOkdIJwxb5t864pr_8zXF1UDH_-dX-fUW6q_RixSUCip_3bPAOcTbdRzEA/exec" method="get">
                     <div className="input">
                         <label htmlFor="name">お名前</label>
                         <input type="text" name="name" id="name" required placeholder="例:鈴木太郎"></input>
@@ -18,8 +19,8 @@ export default function Contact(){
                         <label htmlFor="email">お問い合わせ内容</label>
                         <input type="text" name="body" id="body"></input>
                     </div>
-                </form>
-                <input type="button" onClick="sendRequest()" value="送信"></input>
+                </Form>
+                <input type="button" onClick={sendRequest()} value="送信"></input>
             </div>
         </section>
     )
