@@ -1,12 +1,35 @@
 import React, { useState } from 'react';
-import { Profile } from './date/status.jsx';
-import Works from './works.jsx'
-import Contact from './contact.jsx';
+import { Profile } from '../date/status.jsx';
+import Works from '../components/works.jsx'
+// import Contact from '../contact.jsx';
+
 
 export default function Top(){
-    const [date , setDate] = useState(Profile)
+    const date = Profile
     return(
         <div id="box">
+            <header>
+                <h1><a href="">Portfolio</a></h1>
+                <input type="checkbox" id="burger_button" />
+                <label htmlFor="burger_button">
+                    <div className="burger_box">
+                        <span className="burger_line"></span>
+                        <span className="burger_line none"></span>
+                        <span className="burger_line"></span>
+                    </div>
+                </label>
+                <div id="nav_burger">
+                    <nav>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#self_promotion">Self-Promotion</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="mailto:77.620.hk@au.com">Mail<span className="about_align mail">77.620.hk@au.com</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
             <div id="main_img"></div>
             <div className="wrap">
             <section id="about">

@@ -1,5 +1,5 @@
 import React , {useState , Component} from 'react';
-import { webWorks , otherWorks } from './date/status.jsx';
+import { webWorks , otherWorks } from '../date/status.jsx';
 import Item from './item.jsx';
 
 export default function Works(){

@@ -6,7 +6,7 @@ export default function AboutImage({image , link}){
     return(
         <div className="visual">
             <a href="" target="_blank">
-                <img src="img/cafe_anomaly.png" alt=""></img>
+                <img src={img} alt={links}></img>
                 <div className="mask">
                     <div className="caption">
                         &rArr;サイトへ
