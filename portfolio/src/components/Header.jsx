@@ -1,0 +1,29 @@
+import React from "react";
+import HeadList from "./li";
+import { Link as Scroll } from 'react-scroll';
+
+
+export default function HeaderNav(item){
+    const parts = item;
+    return(
+        <header className={parts.class}>
+            <h1><a href="/">Portfolio</a></h1>
+            <input type="checkbox" id="burger_button" />
+            <label htmlFor="burger_button">
+                <div className="burger_box">
+                    <span className="burger_line"></span>
+                    <span className="burger_line none"></span>
+                    <span className="burger_line"></span>
+                </div>
+            </label>
+            <div id="nav_burger">
+                <nav>
+                    <ul>
+                        <HeadList item={parts}></HeadList>
+                        <li><a href="mailto:77.620.hk@au.com">Mail<span className="about_align mail">77.620.hk@au.com</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    )
+}

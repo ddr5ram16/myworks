@@ -24,12 +24,11 @@ export const webWorks = [
         name: 'Dooglen',
         img: dooglen,
         link: "/dooglen",
-        color: "cafe"
     },
     {
         name: 'Portfolio',
         img: portfolio,
-        link: "portfolio.html"
+        link: "/portfolio"
     },
     {
         name: 'Anonim',

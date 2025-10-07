@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Profile } from './date/status.jsx';
 import Top from './pages/Top.jsx';
 import AboutWeb from './pages/aboutWeb.jsx';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -16,13 +15,13 @@ const router = createBrowserRouter([
         ),
         children: [
             { path: "/", element: <Top /> },
-            {path: "/dooglen", element: <AboutWeb work={abouts.dooglen} />}
+            { path: "/dooglen", element: <AboutWeb work={abouts.dooglen} /> },
+            { path: "/portfolio", element: <AboutWeb work={abouts.portfolio} /> },
         ],
     },
 ]);
 
 export default function App(){
-    const [date , setDate] = useState(Profile)
     return(
         <RouterProvider router={router} />
     );

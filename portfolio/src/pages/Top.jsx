@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { Link as Scroll } from 'react-scroll';
 import { Profile } from '../date/status.jsx';
+import { head } from '../date/head.js'
 import Works from '../components/works.jsx'
-// import Contact from '../contact.jsx';
+import HeaderNav from '../components/Header.jsx';
 
 
 export default function Top(){
-    const date = Profile
+    const date = Profile;
+    const header = head;
     return(
         <div id="box">
+            <HeaderNav item={header} />
             <header>
                 <h1><a href="">Portfolio</a></h1>
                 <input type="checkbox" id="burger_button" />
@@ -21,7 +25,7 @@ export default function Top(){
                 <div id="nav_burger">
                     <nav>
                         <ul>
-                            <li><a href="#about">About</a></li>
+                            <li><Scroll to='about' smooth duration={500}>About</Scroll></li>
                             <li><a href="#self_promotion">Self-Promotion</a></li>
                             <li><a href="#works">Works</a></li>
                             <li><a href="#contact">Contact</a></li>
