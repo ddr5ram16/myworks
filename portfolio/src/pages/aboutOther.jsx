@@ -3,7 +3,7 @@ import { worksCommon } from "../date/status";
 import AboutImage from "../components/aboutImage"
 import HeaderNav from "../components/Header";
 
-export default function AboutWeb({work}){
+export default function AboutOther({work}){
     const about = work;
     return(
         <div id="box top">
@@ -12,34 +12,23 @@ export default function AboutWeb({work}){
                 <section id="cafe_anomaly" className="work_section">
                     <div className="work_detail_box">
                         <div className="work_detail_item">
-                            <AboutImage image={about.image} link={about.link}/>
+                            <AboutImage image={about.image}/>
                         </div>
                         <div className="work_detail_item">
                             <div className="text">
                                 <dl>
                                     <dt>作品名</dt><dd>{about.name}</dd>
                                     <dt>作品概要</dt><dd>{about.concept}</dd>
-                                    <dt>制作箇所</dt><dd>{about.inCharge}</dd>
+                                    <dt>制作箇所</dt><dd>デザイン</dd>
                                     <dt>制作期間</dt>
                                     <dd>
                                         <span className="work_align">デザイン {about.designTime}</span>
-                                        <span className="work_align">コーディング {about.codeTime}</span>
                                     </dd>
                                     <dt>素材について</dt>
                                     <dd>主にAdobe fire flyを使用して生成、およびフリー素材を使用</dd>
                                     <dt>使用ソフト</dt>
                                     <dd>
                                         <span className="work_align">デザイン {about.desing}</span>
-                                        <span className="work_align">コーディング {about.code}</span>
-                                    </dd>
-                                    <dt>サイトカラー</dt>
-                                    <dd>
-                                        <div className="site_color frame">
-                                            <span className={'site_color bg_color'+' '+`${about.color}`}>背景色</span>
-                                            <span className={'site_color main_color'+' '+`${about.color}`}>メインカラー</span>
-                                            {about.accent == "" ? <span className="site_color portfolio accent_color">アクセント</span> : ""}
-                                            <span className={'site_color font_color'+' '+`${about.color}`}>文字色</span>
-                                        </div>
                                     </dd>
                                     <dt>その他ポイント</dt>
                                     <dd>

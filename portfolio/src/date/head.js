@@ -4,7 +4,7 @@ export const head = [
         name: 'About'
     },
     {
-        link: 'serf_promotion',
+        link: 'self_promotion',
         name: 'Serf-Promotion'
     },
     {

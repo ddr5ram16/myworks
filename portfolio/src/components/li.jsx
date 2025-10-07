@@ -1,17 +1,15 @@
-import { webWorks } from "../date/status"
-import { head } from "../date/head"
 import React from "react"
+import { Link as Scroll } from 'react-scroll';
 
-export default function HeadList(item){
-    const test =item
+export default function HeadList({date , page}){
+    const test = date;
     return(
-            test.map((path , i) =>
-                <li key={i}>
-                 <a href={path.link}>{path.name}</a>
-                 </li>
-            )
-            // test.map((items , i) =>
-            //     <li key={i}><a href={items.link}>{items.name}</a></li>
-            // ) 
+        page === "work" ?
+        test.map((items , i) =>
+            <li key={i}><a href="/">{items.name}</a></li>
+        ):
+        test.map((items , i) =>
+            <li key={i}><Scroll to={items.link} smooth duration={600}>{items.name}</Scroll></li>
+        )
     )
 }

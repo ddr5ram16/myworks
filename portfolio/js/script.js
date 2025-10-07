@@ -1,12 +1,4 @@
-$('a[href*="#"]').click(function () {
-  var elmHash = $(this).attr('href');
-  var pos = $(elmHash).offset().top - 80;
-  $('body,html').animate({scrollTop: pos}, 500);
-  return false;
-});
-$('#nav_burger nav ul li a[href]').on('click', function(event) {
-  $('.burger_box').trigger('click');
-});
+
 function sendRequest() {
   const api_url = "https://script.google.com/a/macros/multi-school.com/s/AKfycbyEo2xvr807EOkdIJwxb5t864pr_8zXF1UDH_-dX-fUW6q_RixSUCip_3bPAOcTbdRzEA/exec";
   let req = {};

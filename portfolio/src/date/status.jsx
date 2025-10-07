@@ -17,7 +17,15 @@ export const Profile = {
     },
     trade: ['Webクリエイター能力認定試験/HTML5 エキスパート' , 'Photoshop検定 スタンダード' , '社会人常識マナー検定試験 三級'],
     tools: ['Photoshop,XD,Illustrator' , 'PremerePro,AfterEffects' , 'DreamWeaver,VScode'],
-    skills: ['HTML/CSS、PHP、CMS、GitHub','JavaScript、React、動画編集']
+    skills: ['HTML/CSS、PHP、CMS、GitHub','JavaScript、React、動画編集'],
+}
+export const topCommon = {
+    class: "",
+    page: "",
+}
+export const worksCommon ={
+    class: "work_header",
+    page: "work"
 }
 export const webWorks = [
     {
@@ -33,43 +41,43 @@ export const webWorks = [
     {
         name: 'Anonim',
         img: anonim,
-        link: "anonim.html"
+        link: "/anonim."
     },
     {
         name: 'Cafe Anomaly',
         img: cafe_anomaly,
-        link: "cafe_anomaly.html"
+        link: "/cafe_anomaly"
     },
     {
         name: 'Janedoe Channel',
         img: janedoe_channel,
-        link: "janedoe_channel.html",
+        link: "/janedoe_channel",
     },
 ]
 export const otherWorks = [
     {
         name: '企業ノベルティ',
         img: novelty,
-        link: "novelty.html"
+        link: "novelty"
     },
     {
         name: '阿弥陀祭りチラシ',
         img: fes,
-        link: "fes.html"
+        link: "festival"
     },
     {
         name: '美容室チラシ',
         img: beautysalon,
-        link: "beautysalon.html"
+        link: "beauty_salon"
     },
     {
         name: '就活フェアチラシ',
         img: jobhunting,
-        link: "Jobhunting.html"
+        link: "/job_hunting"
     },
     {
         name: 'いちご狩りチラシ',
         img: strawberry,
-        link: "strawberry.html"
+        link: "strawberry_farm"
     },
 ]

@@ -1,39 +1,17 @@
 import React, { useState } from 'react';
 import { Link as Scroll } from 'react-scroll';
-import { Profile } from '../date/status.jsx';
-import { head } from '../date/head.js'
+import { Profile , topCommon} from '../date/status.jsx';
 import Works from '../components/works.jsx'
 import HeaderNav from '../components/Header.jsx';
+import Contact from '../components/contact.jsx';
 
 
 export default function Top(){
     const date = Profile;
-    const header = head;
+    const head =topCommon
     return(
         <div id="box">
-            <HeaderNav item={header} />
-            <header>
-                <h1><a href="">Portfolio</a></h1>
-                <input type="checkbox" id="burger_button" />
-                <label htmlFor="burger_button">
-                    <div className="burger_box">
-                        <span className="burger_line"></span>
-                        <span className="burger_line none"></span>
-                        <span className="burger_line"></span>
-                    </div>
-                </label>
-                <div id="nav_burger">
-                    <nav>
-                        <ul>
-                            <li><Scroll to='about' smooth duration={500}>About</Scroll></li>
-                            <li><a href="#self_promotion">Self-Promotion</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="mailto:77.620.hk@au.com">Mail<span className="about_align mail">77.620.hk@au.com</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            <HeaderNav item={head}/>
             <div id="main_img"></div>
             <div className="wrap">
             <section id="about">

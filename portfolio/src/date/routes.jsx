@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import Top from './pages/Top.jsx';
-import AboutWeb from './pages/aboutWeb.jsx';
-import AboutOther from './pages/aboutOther.jsx';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React from "react";
+import { createBrowserRouter } from "@react-router/dev/routes";
 import { Works } from "./date/worksAbout";
+import AboutWeb from "../pages/aboutWeb.jsx";
+import AboutOther from './pages/aboutOther.jsx';
 
 const abouts = Works;
 export const router = createBrowserRouter([
@@ -21,7 +20,7 @@ export const router = createBrowserRouter([
             { path: "/anonim", element: <AboutWeb work={abouts.Anonim}/>,},
             { path: "/cafe_anomaly", element: <AboutWeb work={abouts.cafeAnomaly}/>,},
             { path: "/janedoe_channel", element: <AboutWeb work={abouts.janeDoe}/>,},
-            { path: "/novelty", element: <AboutOther work={abouts.noevlty_card}/>,},
+            { path: "/novelty", element: <AboutOther work={abouts.novelty}/>,},
             { path: "/festival", element: <AboutOther work={abouts.festival}/>,},
             { path: "/job_hunting", element: <AboutOther work={abouts.job_hunting}/>,},
             { path: "/beauty_salon", element: <AboutOther work={abouts.beauty_salon}/>,},
@@ -29,8 +28,3 @@ export const router = createBrowserRouter([
         ],
     },
 ]);
-export default function App(){
-    return(
-        <RouterProvider router={router} />
-    );
-}

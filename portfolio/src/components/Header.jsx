@@ -1,9 +1,10 @@
 import React from "react";
 import HeadList from "./li";
-import { Link as Scroll } from 'react-scroll';
+import { head } from "../date/head";
 
 
-export default function HeaderNav(item){
+
+export default function HeaderNav({item}){
     const parts = item;
     return(
         <header className={parts.class}>
@@ -19,8 +20,12 @@ export default function HeaderNav(item){
             <div id="nav_burger">
                 <nav>
                     <ul>
-                        <HeadList item={parts}></HeadList>
+                        <HeadList date={head} page={parts.page}></HeadList>
                         <li><a href="mailto:77.620.hk@au.com">Mail<span className="about_align mail">77.620.hk@au.com</span></a></li>
+                        <li>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeETkJY08wS09n5al9jvuOw_1Z114HzjOYduY9WuwwxH9UIcw/viewform?usp=header" target="_blank">お問い合わせ
+                            <span className="about_align mail">(別ブラウザで開きます)</span></a>
+                            </li>
                     </ul>
                 </nav>
             </div>
