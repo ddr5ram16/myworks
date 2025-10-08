@@ -21,7 +21,13 @@ input[type=checkbox],input[name="works"]{
     display: none;
 }
 .error_message{
-	text-align: senter;
+	text-align: center;
+}
+.error_message .about_align a{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
 }
 .burger_box{
     display: block;
