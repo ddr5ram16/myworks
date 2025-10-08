@@ -12,6 +12,7 @@ export const Router = createBrowserRouter([
         errorElement: (
             <div className="error_message">
                 <h1 className="">404 - Page Not Found</h1>
+                <span className="about_align"><a href="/">トップページへ戻る</span>
             </div>
         ),
         children: [
