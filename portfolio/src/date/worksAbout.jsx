@@ -1,6 +1,6 @@
 import dooglen from '../../img/dooglen.png';
 import portfolio from '../../img/portforio.png';
-import anonim from '../../img/anonim.png';
+import anonim_img from '../../img/anonim.png';
 import cafe_anomaly from '../../img/cafe_anomaly.png';
 import janedoe_channel from '../../img/janedoe.png';
 import novelty from '../../img/novelty.png'
@@ -37,9 +37,9 @@ export const Works = {
         code: "VScode",
         point: "作品をまとめる部分のCSSによるタブ切り替えと、レスポンシブ時の見やすさにこだわりました。"
     },
-    anonim:{
+    Anonim:{
         name: "Anonim",
-        image: anonim,
+        image: anonim_img,
         link: "/anonim",
         concept: "10代後半〜30代前半女性向けの架空のコスメメーカーのサイトを制作しました",
         inCharge: "デザイン・コーディング",

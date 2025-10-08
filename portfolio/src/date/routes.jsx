@@ -1,11 +1,12 @@
 import React from "react";
-import { createBrowserRouter } from "@react-router/dev/routes";
-import { Works } from "./date/worksAbout";
+import { createBrowserRouter } from "react-router-dom";
+import { Works } from "../date/worksAbout";
+import Top from '../pages/Top.jsx';
 import AboutWeb from "../pages/aboutWeb.jsx";
-import AboutOther from './pages/aboutOther.jsx';
+import AboutOther from '../pages/aboutOther.jsx';
 
 const abouts = Works;
-export const router = createBrowserRouter([
+export const Router = createBrowserRouter([
     {
         path: "/",
         errorElement: (

@@ -41,7 +41,7 @@ export const webWorks = [
     {
         name: 'Anonim',
         img: anonim,
-        link: "/anonim."
+        link: "/anonim"
     },
     {
         name: 'Cafe Anomaly',

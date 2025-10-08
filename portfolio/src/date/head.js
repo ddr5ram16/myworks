@@ -11,8 +11,8 @@ export const head = [
         link: 'works',
         name: 'Works'
     },
-    {
-        link: 'contact',
-        name: 'Contact'
-    }
+    // {
+    //     link: 'contact',
+    //     name: 'Contact'
+    // }
 ]
