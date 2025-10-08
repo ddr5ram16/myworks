@@ -10,7 +10,7 @@ export const Router = createBrowserRouter([
     {
         path: "/",
         errorElement: (
-            <div className="">
+            <div className="error_message">
                 <h1 className="">404 - Page Not Found</h1>
             </div>
         ),
