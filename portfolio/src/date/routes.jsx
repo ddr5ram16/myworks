@@ -16,7 +16,7 @@ export const Router = createBrowserRouter([
             </div>
         ),
         children: [
-            { path: "/", element: <Top /> },
+            { path: "", element: <Top /> },
             { path: "/dooglen", element: <AboutWeb work={abouts.dooglen} /> },
             { path: "/portfolio", element: <AboutWeb work={abouts.portfolio} /> },
             { path: "/anonim", element: <AboutWeb work={abouts.Anonim}/>,},

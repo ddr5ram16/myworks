@@ -35,7 +35,6 @@ export default function AboutOther({work}){
                                         <p>{about.point}</p>
                                     </dd>
                                 </dl>
-                                <a href={about.link} className="button" target="_blank">サイトへ<span>(別ブラウザで表示します)</span></a>
                             </div>
                         </div>
                     </div>

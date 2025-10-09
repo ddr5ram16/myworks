@@ -111,9 +111,9 @@ export const Works = {
     strawberry_farm:{
         name: "いちご狩り",
         image: strawberry,
-        concept: "",
-        designTime: "",
+        concept: "30代前後のファミリー層をターゲットにしたチラシを制作しました",
+        designTime: "5時間",
         desing: "Illustrator",
-        point: ""
+        point: "いちごの瑞々しさを表す赤色の調整と、情報の密度感に注意しました。"
     },
 }
